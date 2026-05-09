@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foto Rahasia Kamu...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      text-align: center;
+    }
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #ff00ff;
+      text-shadow: 0 0 25px red;
+    }
+    img {
+      max-width: 85%;
+      max-height: 70vh;
+      border: 6px solid red;
+      box-shadow: 0 0 40px red;
+      border-radius: 15px;
+    }
+    .message {
+      margin-top: 30px;
+      font-size: 1.7rem;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>📸  PENAMPAKAN </h1>
+    
+    <!-- GANTI LINK INI DENGAN LINK FOTO KAMU -->
+    <img src="https://i.postimg.cc/FsKQSCxb/Screenshot-20260508-100618.jpg" alt="Foto Prank">
+
+    <p class="message">INGGA YE🗿</p>
+  </div>
+
+  <script>
+    // Auto fullscreen biar lebih dramatis
+    setTimeout(() => {
+      document.documentElement.requestFullscreen().catch(() => {});
+    }, 600);
+
+    // Mainkan musik rickroll (bisa di-comment kalau tidak mau)
+    setTimeout(() => {
+      const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+      audio.volume = 0.6;
+      audio.play();
+    }, 1500);
+
+    // Alert prank
+    setTimeout(() => {
+      alert("😈 KENA PRANK GUE BRO!!\nKirim ke temen lu sekarang 😂");
+    }, 2500);
+  </script>
+
+</body>
+</html>
